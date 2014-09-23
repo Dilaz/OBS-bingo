@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+	min-width: 500px;
+}
+
+.nojs .js-warning {
+	display: block;
+}
+
+.js-warning {
+	display: none;
+}
+
+.container {
+	min-height: 100%;
+	position: relative;
+}
+
+.nojs .container {
+	display: none !important;
+}
+
+.bingo-row span {
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 32px;
+	position: relative;
+	overflow: hidden;
+}
+
+.bingo-row span.active {
+	background-color: #ffcccc;
+}
+
+.bingo-row span p {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
