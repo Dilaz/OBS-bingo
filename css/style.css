@@ -23,7 +23,7 @@ html, body {
 .bingo-row span {
 	border: 1px solid black;
 	box-sizing: border-box;
-	font-size: 32px;
+	font-size: 16px;
 	position: relative;
 	overflow: hidden;
 }
