@@ -58,6 +58,15 @@
 	"Uses a command by himself after joining",
 	"Caps lock",
 	"Doesn't understand the concept of aspect ratio",
-	"Asking support for a feature OBS never had"
+	"Asking support for a feature OBS never had",
+	"Video card running in PCI-E x8 instead of x16",
+	"Video card running in PCI-E x4 instead of x16",
+	"Video card running in PCI-E x2 instead of x16",
+	"Video card running in PCI-E x1 instead of x16",
+	"Video cards in SLI",
+	"Celeron processor",
+	"Pentium processor",
+	"Frame drops with Comcast",
+	"Bitdefender blocking webcam from working"
 ]
 
