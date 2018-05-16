@@ -53,7 +53,7 @@
 	"Posting the whole log/crashlog to channel",
 	"Update broke my OBS",
 	"Facecam",
-	"Replying to OBScommits",
+	"Replying to OBScommits/OBSBot",
 	"Big Youtuber/Twitch streamer said Elgato is good",
 	"Uses a command by himself after joining",
 	"Caps lock",
@@ -67,6 +67,11 @@
 	"Celeron processor",
 	"Pentium processor",
 	"Frame drops with Comcast",
-	"Bitdefender blocking webcam from working"
+	"Bitdefender blocking webcam from working",
+	"User ignored factoids directly applying to issue",
+	"Spamming highlights to try to get help",
+	"Arguing with support",
+	"Bebo",
+	"Asking about Streamlabs OBS"
 ]
 
