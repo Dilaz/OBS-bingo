@@ -18,38 +18,45 @@ A modern, beautifully designed Bingo game for OBS (Open Broadcaster Software) su
 - **Framework**: Vue 3 with Composition API
 - **Language**: TypeScript with strict mode
 - **Build Tool**: Vite
+- **Package Manager**: Bun (fast, modern alternative to npm)
 - **Styling**: Tailwind CSS with custom animations
 - **UI Components**: Custom components inspired by shadcn-vue
 - **State Management**: VueUse composables
 - **Testing**: Vitest with comprehensive test coverage
-- **Code Quality**: ESLint + Prettier with strict configuration
+- **Code Quality**: Biome (unified linting and formatting)
 
 ## 📦 Installation
 
 ```bash
 # Install dependencies
-npm install
+bun install
 
 # Run development server
-npm run dev
+bun run dev
 
 # Build for production
-npm run build
+bun run build
 
 # Preview production build
-npm run preview
+bun run preview
 
 # Run tests
-npm run test
+bun run test
 
 # Run tests with UI
-npm run test:ui
+bun run test:ui
 
-# Lint code
-npm run lint
+# Lint and format code
+bun run lint
 
-# Format code
-npm run format
+# Format code only
+bun run format
+
+# Check code without auto-fix
+bun run check
+
+# Type check (optional)
+bun run typecheck
 ```
 
 ## 🎮 How to Play
@@ -85,13 +92,13 @@ The project includes comprehensive unit tests for all composables and core funct
 
 ```bash
 # Run tests
-npm run test
+bun run test
 
 # Run tests with UI (recommended for development)
-npm run test:ui
+bun run test:ui
 
 # Run tests with coverage
-npm run test -- --coverage
+bun run test -- --coverage
 ```
 
 ## 🎨 Customization
@@ -124,8 +131,9 @@ See LICENSE file for details.
 
 - **Type Safety**: Full TypeScript coverage with strict mode
 - **Hot Module Replacement**: Instant feedback during development
-- **Automatic Code Formatting**: Prettier integration
-- **Linting**: ESLint with Vue and TypeScript rules
+- **Fast Package Management**: Bun for 3-5x faster installation
+- **Unified Tooling**: Biome for both linting and formatting (single tool!)
+- **Automatic Code Formatting**: Format on save with Biome
 - **Component Testing**: Vitest for unit and integration tests
 - **Path Aliases**: Use `@/` for clean imports
 - **Modern Build**: Vite for lightning-fast builds
