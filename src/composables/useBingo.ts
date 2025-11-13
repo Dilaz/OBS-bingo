@@ -1,5 +1,4 @@
 import { useStorage } from '@vueuse/core'
-import { computed } from 'vue'
 import wordsData from '../../words.json'
 
 export interface BingoCell {
@@ -19,18 +18,12 @@ export function useBingo() {
   const wins = useStorage('obs-bingo-wins', 0)
   const hasWon = useStorage('obs-bingo-has-won', false)
   const cells = useStorage<BingoCell[]>('obs-bingo-cells', [])
+  const winningPattern = useStorage<WinInfo | null>('obs-bingo-winning-pattern', null)
 
   // Initialize or load game
   if (cells.value.length === 0) {
     initializeBoard()
   }
-
-  const winningPattern = computed<WinInfo | null>(() => {
-    if (hasWon.value) {
-      return checkForWin()
-    }
-    return null
-  })
 
   function initializeBoard() {
     // Shuffle and take 25 random words
@@ -92,6 +85,7 @@ export function useBingo() {
     const winInfo = checkForWin()
     if (winInfo) {
       hasWon.value = true
+      winningPattern.value = winInfo
       wins.value++
       return true
     }
@@ -100,6 +94,7 @@ export function useBingo() {
 
   function resetBoard() {
     hasWon.value = false
+    winningPattern.value = null
     initializeBoard()
   }
 

@@ -49,19 +49,17 @@ describe('useDarkMode', () => {
   it('should persist dark mode preference in localStorage', () => {
     const { toggleDarkMode, isDark } = useDarkMode()
 
-    // Get current state
-    const currentState = isDark.value
+    // Get the initial state
+    const initialValue = isDark.value
 
-    // Toggle and check it's stored
+    // Toggle and verify the value changed and is stored
     toggleDarkMode()
-    expect(isDark.value).toBe(!currentState)
-    const stored = localStorage.getItem('obs-bingo-dark-mode')
-    expect(stored).toBeTruthy() // Just check it's stored
+    expect(isDark.value).toBe(!initialValue)
+    expect(localStorage.getItem('obs-bingo-dark-mode')).toBeTruthy()
 
-    // Toggle back
+    // Toggle back and verify
     toggleDarkMode()
-    expect(isDark.value).toBe(currentState)
-    const stored2 = localStorage.getItem('obs-bingo-dark-mode')
-    expect(stored2).toBeTruthy() // Just check it's stored
+    expect(isDark.value).toBe(initialValue)
+    expect(localStorage.getItem('obs-bingo-dark-mode')).toBeTruthy()
   })
 })
