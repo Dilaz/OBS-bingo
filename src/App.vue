@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { useBingo } from './composables/useBingo'
 import { useDarkMode } from './composables/useDarkMode'
-import BingoBoard from './components/BingoBoard.vue'
-import Button from './components/ui/Button.vue'
-import { Moon, Sun, RotateCcw, Trophy } from 'lucide-vue-next'
 
 const { wins, resetBoard, resetWins } = useBingo()
 const { isDark, toggleDarkMode } = useDarkMode()

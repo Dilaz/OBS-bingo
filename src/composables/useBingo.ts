@@ -1,5 +1,5 @@
-import { computed } from 'vue'
 import { useStorage } from '@vueuse/core'
+import { computed } from 'vue'
 import wordsData from '../../words.json'
 
 export interface BingoCell {

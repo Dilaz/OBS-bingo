@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import { useBingo } from '@/composables/useBingo'
-import BingoCell from './BingoCell.vue'
-import Card from './ui/Card.vue'
+import { computed } from 'vue'
 
 const { cells, hasWon, winningPattern, toggleCell } = useBingo()
 

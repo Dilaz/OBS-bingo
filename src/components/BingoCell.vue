@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { cn } from '@/lib/utils'
 import type { BingoCell } from '@/composables/useBingo'
 
 interface Props {
