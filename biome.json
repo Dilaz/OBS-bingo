@@ -17,7 +17,7 @@
     "lineWidth": 100
   },
   "organizeImports": {
-    "enabled": true
+    "enabled": false
   },
   "linter": {
     "enabled": true,
@@ -25,7 +25,7 @@
       "recommended": true,
       "correctness": {
         "noUnusedVariables": "off",
-        "noUnusedImports": "warn"
+        "noUnusedImports": "off"
       },
       "complexity": {
         "noForEach": "off"
