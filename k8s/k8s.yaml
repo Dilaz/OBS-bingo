@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: obs-bingo
-        image: ghcr.io/dilaz/obs-bingo:fb7e839916e385e39a19c7d214f67fe7dcd98e86
+        image: ghcr.io/dilaz/obs-bingo:69d164ccec95b58454b3dced974d28de616edfb8
         imagePullPolicy: IfNotPresent
       imagePullSecrets:
       - name: github-container-registry
